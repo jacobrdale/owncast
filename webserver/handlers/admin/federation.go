@@ -3,11 +3,11 @@ package admin
 import (
 	"net/http"
 
-	"github.com/owncast/owncast/activitypub"
-	"github.com/owncast/owncast/activitypub/outbox"
-	"github.com/owncast/owncast/activitypub/persistence"
-	"github.com/owncast/owncast/persistence/configrepository"
-	webutils "github.com/owncast/owncast/webserver/utils"
+	"github.com/jacobrdale/owncast/activitypub"
+	"github.com/jacobrdale/owncast/activitypub/outbox"
+	"github.com/jacobrdale/owncast/activitypub/persistence"
+	"github.com/jacobrdale/owncast/persistence/configrepository"
+	webutils "github.com/jacobrdale/owncast/webserver/utils"
 )
 
 // SendFederatedMessage will send a manual message to the fediverse.
