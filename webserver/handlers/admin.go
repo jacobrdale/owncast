@@ -9,6 +9,11 @@ import (
 	"github.com/owncast/owncast/webserver/router/middleware"
 )
 
+func Status(w http.ResponseWriter, r *http.Request) {
+    // handle status request
+    w.Write([]byte("admin status"))
+}
+
 func (*ServerInterfaceImpl) StatusAdmin(w http.ResponseWriter, r *http.Request) {
 	middleware.RequireAdminAuth(admin.Status)(w, r)
 }

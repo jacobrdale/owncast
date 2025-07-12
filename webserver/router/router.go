@@ -14,13 +14,24 @@ import (
 	"golang.org/x/net/http2/h2c"
 
 	"github.com/owncast/owncast/activitypub"
+	"github.com/gorilla/mux"
 	aphandlers "github.com/owncast/owncast/activitypub/controllers"
 	"github.com/owncast/owncast/config"
 	"github.com/owncast/owncast/core/chat"
 	"github.com/owncast/owncast/core/data"
-	"github.com/owncast/owncast/webserver/handlers"
+	"github.com/jacobrdale/owncast/webserver/handlers"
 	"github.com/owncast/owncast/webserver/router/middleware"
 )
+
+// add NewRouter
+func NewRouter() *mux.Router {
+    router := mux.NewRouter()
+    
+    // Add all routes here, e.g.:
+    router.HandleFunc("/admin", middleware.RequireAdminAuth(adminHandler))
+    
+    return router
+}
 
 // Start starts the router for the http, ws, and rtmp.
 func Start(enableVerboseLogging bool) error {
@@ -46,7 +57,7 @@ func Start(enableVerboseLogging bool) error {
 	r.HandleFunc("/hls/*", handlers.HandleHLSRequest)
 
 	// The admin web app.
-	r.HandleFunc("/admin/*", middleware.RequireAdminAuth(handlers.IndexHandler))
+	r.HandleFunc("/admin", adminHandler)
 
 	// Single ActivityPub Actor
 	r.HandleFunc("/federation/user/*", middleware.RequireActivityPubOrRedirect(aphandlers.ActorHandler))
