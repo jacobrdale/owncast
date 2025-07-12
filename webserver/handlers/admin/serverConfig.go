@@ -4,13 +4,13 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/owncast/owncast/config"
-	"github.com/owncast/owncast/core/transcoder"
-	"github.com/owncast/owncast/models"
-	"github.com/owncast/owncast/persistence/configrepository"
-	"github.com/owncast/owncast/utils"
-	"github.com/owncast/owncast/webserver/handlers/generated"
-	"github.com/owncast/owncast/webserver/router/middleware"
+	"github.com/jacobrdale/owncast/config"
+	"github.com/jacobrdale/owncast/core/transcoder"
+	"github.com/jacobrdale/owncast/models"
+	"github.com/jacobrdale/owncast/persistence/configrepository"
+	"github.com/jacobrdale/owncast/utils"
+	"github.com/jacobrdale/owncast/webserver/handlers/generated"
+	"github.com/jacobrdale/owncast/webserver/router/middleware"
 	log "github.com/sirupsen/logrus"
 )
 
