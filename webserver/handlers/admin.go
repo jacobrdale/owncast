@@ -3,10 +3,10 @@ package handlers
 import (
 	"net/http"
 
-	"github.com/owncast/owncast/core/rtmp"
-	"github.com/owncast/owncast/webserver/handlers/admin"
-	"github.com/owncast/owncast/webserver/handlers/generated"
-	"github.com/owncast/owncast/webserver/router/middleware"
+	"github.com/jacobrdale/owncast/core/rtmp"
+	"github.com/jacobrdale/owncast/webserver/handlers/admin"
+	"github.com/jacobrdale/owncast/webserver/handlers/generated"
+	"github.com/jacobrdale/owncast/webserver/router/middleware"
 )
 
 func Status(w http.ResponseWriter, r *http.Request) {
