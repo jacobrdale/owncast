@@ -13,14 +13,14 @@ import (
 	"golang.org/x/net/http2"
 	"golang.org/x/net/http2/h2c"
 
-	"github.com/owncast/owncast/activitypub"
+	"github.com/jacobrdale/owncast/activitypub"
 	"github.com/gorilla/mux"
-	aphandlers "github.com/owncast/owncast/activitypub/controllers"
-	"github.com/owncast/owncast/config"
-	"github.com/owncast/owncast/core/chat"
-	"github.com/owncast/owncast/core/data"
+	aphandlers "github.com/jacobrdale/owncast/activitypub/controllers"
+	"github.com/jacobrdale/owncast/config"
+	"github.com/jacobrdale/owncast/core/chat"
+	"github.com/jacobrdale/owncast/core/data"
 	"github.com/jacobrdale/owncast/webserver/handlers"
-	"github.com/owncast/owncast/webserver/router/middleware"
+	"github.com/jacobrdale/owncast/webserver/router/middleware"
 )
 
 // add NewRouter
