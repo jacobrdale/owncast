@@ -11,7 +11,7 @@
 <br/>
 
 <p align="center">
-	<a href="https://github.com/owncast/owncast/blob/develop/LICENSE">
+	<a href="https://github.com/jacobrdale/owncast/blob/develop/LICENSE">
     <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License" />
   </a>
 </p>
@@ -25,7 +25,7 @@
 	·
 	<a href="https://owncast.online/faq/">FAQ</a>
 	·
-	<a href="https://github.com/owncast/owncast/issues">Report Bug</a>
+	<a href="https://github.com/jacobrdale/owncast/issues">Report Bug</a>
 </p>
 
 <!-- TABLE OF CONTENTS -->
@@ -57,12 +57,12 @@
 Owncast is an open source, self-hosted, decentralized, single user live video streaming and chat server for running your own live streams similar in style to the large mainstream options. It offers complete ownership over your content, interface, moderation and audience. <a href="https://watch.owncast.online">Visit the demo</a> for an example.
 
 <div>
-    <img alt="GitHub all releases" src="https://img.shields.io/github/downloads/owncast/owncast/total?style=for-the-badge">
+    <img alt="GitHub all releases" src="https://img.shields.io/github/downloads/jacobrdale/owncast/total?style=for-the-badge">
 	  <a href="https://hub.docker.com/r/owncast/owncast">
-      <img alt="Docker Pulls" src="https://img.shields.io/docker/pulls/owncast/owncast?style=for-the-badge">
+      <img alt="Docker Pulls" src="https://img.shields.io/docker/pulls/jacobrdale/owncast?style=for-the-badge">
 	  </a>
-    <a href="https://github.com/owncast/owncast/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22">
-      <img alt="GitHub issues by-label" src="https://img.shields.io/github/issues-raw/owncast/owncast/good%20first%20issue?style=for-the-badge">
+    <a href="https://github.com/jacobrdale/owncast/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22">
+      <img alt="GitHub issues by-label" src="https://img.shields.io/github/issues-raw/jacobrdale/owncast/good%20first%20issue?style=for-the-badge">
     </a>
     <a href="https://opencollective.com/owncast">
       <img alt="Open Collective backers and sponsors" src="https://img.shields.io/opencollective/all/owncast?style=for-the-badge">
